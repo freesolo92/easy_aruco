@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
+set(CMAKE_CXX_STANDARD 14) # Add to use make_unique Methode 
 project(easy_aruco)
 
 find_package(catkin REQUIRED COMPONENTS sensor_msgs cv_bridge tf2_ros tf2_geometry_msgs)

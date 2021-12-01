@@ -11,7 +11,7 @@ void Detector::onCameraInfo(const sensor_msgs::CameraInfo &cam_info) {
   // assumes that the image is undistorted!
   // assumes that the cameraFrame never moves wrt the referenceFrame!
 
-  auto newParams = make_unique<CameraParameters>();
+  auto newParams = std::make_unique<CameraParameters>();
 
   Mat &cameraMatrix = newParams->cameraMatrix;
   cameraMatrix.setTo(0);
